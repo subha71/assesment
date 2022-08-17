@@ -1,0 +1,15 @@
+<%= form_with model: @user do |form| %>
+    
+  
+      <%= form.label :email %>
+      <%= form.text_field :email %><p>
+  
+  
+      <%= form.label :password %>
+      <%= form.text_field :password ,autocomplete: 'off' %><p>
+
+      <%= form.label :password_confirmation %>
+      <%= form.text_field :password_confirmation ,autocomplete: 'off' %><p>      
+  
+      <%= form.submit 'Sign Up' %>
+  <% end %>
